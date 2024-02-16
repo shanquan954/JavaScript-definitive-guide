@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="col">
+            <div id="row_1" class="row">1</div>
+            <div id="row_2" class="row">2</div>
+            <div id="row_3" class="row">3</div>
+        </div>
+        <div class="col">
+            <div id="row_4" class="row">4</div>
+            <div id="row_5" class="row">5</div>
+            <div id="row_6" class="row">6</div>
+        </div>
+        <div class="col">
+            <div id="row_7" class="row">7</div>
+            <div id="row_8" class="row">8</div>
+            <div id="row_9" class="row">9</div>
+        </div>
+    </div>
+</body>
+<style>
+    .box {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .col {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .row {
+        width: 30%;
+        aspect-ratio: 1/1;
+        background-color: crimson;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        color: aliceblue;
+        user-select: none;
+        transition: all 0.5s;
+    }
+
+    .row:hover {
+        font-size: 42px;
+    }
+</style>
+
+</html>
