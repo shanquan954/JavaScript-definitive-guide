@@ -132,7 +132,34 @@ export { g as great }
 export { h } from './h.js'
 ```
 
+### 文件模块
 
+#### 目录信息
+
+- 当前执行文件目录`process.cwd()`
+- 当前文件的绝对路径`__filename`
+- 当前文件文件夹的绝对路径`__dirname`
+- 用户的主目录`os.homedir()`
+- 系统目录分隔符`path.sep`
+
+#### 文件操作
+
+> 每个方法都有相对应的同步和异步还有promise实现
+
+- 读取文件`fs.read()`
+- 写入文件`fs.writeFile()`
+- 添加内容`fs.appendFile()`
+- 打开文件`fs.open()`
+- 截掉内容`fs.truncate()`
+- 复制文件`fs.copyFile()`
+- 重命名/移动`fs.rename()`
+- 获取文件或目录的元信息`fs.stat()`
+- 设置文件权限`fs.chmod()`
+- 设置目录权限`fs.chown`
+- 创建目录`fs.mkdir()`
+- 删除目录`fs.rmdir()`
+- 列出目录`fs.readdir()`
+- 流式列出目录`fs.opendir()`
 
 ## 纠正
 
